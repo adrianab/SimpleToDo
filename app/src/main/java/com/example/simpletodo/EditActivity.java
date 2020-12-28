@@ -35,7 +35,7 @@ public class EditActivity extends AppCompatActivity {
                 intent.putExtra(MainActivity.KEY_ITEM_TEXT, etItem.getText().toString());
                 intent.putExtra(MainActivity.KEY_ITEM_POSITION, getIntent().getExtras().getInt(MainActivity.KEY_ITEM_POSITION));
                 // Set the result of the intent
-                setResult(RESULT_OK);
+                setResult(RESULT_OK, intent);
                 // Finish the activity, close the screen and go back
                 finish();
             }
