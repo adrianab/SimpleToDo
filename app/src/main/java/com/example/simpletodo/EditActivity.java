@@ -21,6 +21,7 @@ public class EditActivity extends AppCompatActivity {
         etItem = findViewById(R.id.etItem);
         btnSave = findViewById(R.id.btnSave);
 
+        // Change text of the action bar at the top of the app
         getSupportActionBar().setTitle("Edit item");
 
         etItem.setText(getIntent().getStringExtra(MainActivity.KEY_ITEM_TEXT));
